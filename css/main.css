@@ -184,6 +184,28 @@ a:hover {
     box-shadow: 1.5px 1.5px 3px rgba(174, 174, 192, 0.4), -1px -1px 3px #fff;
   }
 }
+
+.cta-btn--publications {
+  border-radius: 0;
+  color: #5b86e5;
+  padding: 0.8rem 0rem;
+  /* border: 2px solid #ffffff; */
+}
+.cta-btn--publications:hover {
+  color: #ffffff;
+  text-decoration: none;
+  box-shadow: none;
+}
+@media (max-width: 37.5em) {
+  .cta-btn--publications:hover {
+    color: #fff;
+  }
+}
+.cta-btn--publications:hover::after {
+  width: 100%;
+}
+
+
 .cta-btn--projects::after {
   height: 250%;
   width: 130%;
@@ -558,15 +580,18 @@ section .row span {
 #projects {
   background-color: #e5e5e5;
   -webkit-clip-path: polygon(0  0, 100% 0, 100% 100%, 0 100%);
-  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
   color: #272341;
-  margin-top: 15rem;
+
+  /* margin-top: 15rem; */
   padding-top: 15rem;
 }
 @media (max-width: 75em) {
   #projects {
     margin-top: 0;
     padding-top: 5rem;
+    padding-bottom: 2rem;
+    margin-bottom: 0;
     height: 100%;
     -webkit-clip-path: none;
     clip-path: none;
@@ -803,3 +828,48 @@ section .row span {
   text-align: left; /* Ensures descriptions are left-aligned */
   font-size: 16px;
 }
+
+
+/* Publications Section */
+#publications .publication-item {
+  margin-bottom: 15px;
+  text-align: left;
+  
+}
+
+#publications{
+  margin-bottom: 10rem;
+}
+@media (max-width: 75em) {
+  #publications {
+    height: 100%;
+    -webkit-clip-path: none;
+    clip-path: none;
+    margin-bottom: 0rem;
+  }
+}
+.publication-title{
+  font-size: 18px;
+  font-weight: bold;
+  display: inline; /* or inline-block, as needed */
+  background: linear-gradient(to right, #5b86e5 50%, #36d1dc 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent; /* Hide the original text color */
+  transition: background-position 0.5s ease;
+  background-size: 200% 100%;
+  background-position: right bottom; /* Adjust color to match your theme */
+}
+
+
+
+.publication-title:hover {
+  /* color: #5b86e5;  */
+  background-position: left bottom;
+}
+
+.publication-authors, .publication-details {
+  font-size: 13px;
+  color: #666; /* Adjust color for readability */
+}
+

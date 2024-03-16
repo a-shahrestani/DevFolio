@@ -75,7 +75,7 @@ ScrollReveal().reveal(".fa", {
 });
 
 /* Experience Section*/ 
-ScrollReveal().reveal(".experience-item", {
+ScrollReveal().reveal(".experince-wrapper", {
   ...defaultProps,
   delay: 600,
   origin: window.innerWidth > 768 ? "left" : "bottom",
@@ -89,6 +89,13 @@ ScrollReveal().reveal(".education-wrapper", {
 
 /* Skills Section*/ 
 ScrollReveal().reveal(".skills-list", {
+  ...defaultProps,
+  delay: 600,
+  origin: window.innerWidth > 768 ? "left" : "bottom",
+});
+
+/* Skills Section*/ 
+ScrollReveal().reveal("#publications", {
   ...defaultProps,
   delay: 600,
   origin: window.innerWidth > 768 ? "left" : "bottom",
