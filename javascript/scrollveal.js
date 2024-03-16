@@ -73,3 +73,23 @@ ScrollReveal().reveal(".fa", {
   delay: 500,
   interval: 100,
 });
+
+/* Experience Section*/ 
+ScrollReveal().reveal(".experience-item", {
+  ...defaultProps,
+  delay: 600,
+  origin: window.innerWidth > 768 ? "left" : "bottom",
+});
+
+/* Education Section*/ 
+ScrollReveal().reveal(".education-wrapper", {
+  ...defaultProps,
+  delay: 600,
+});
+
+/* Skills Section*/ 
+ScrollReveal().reveal(".skills-list", {
+  ...defaultProps,
+  delay: 600,
+  origin: window.innerWidth > 768 ? "left" : "bottom",
+});
